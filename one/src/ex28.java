@@ -1,12 +1,14 @@
 public class ex28 {
     public static void main(String[] args){
-        for (int i = 1; i <= 5; i++) {
-            for (int j = 5; j >= 1; j--) {
-                if (i + j == 6) {
-                    System.out.println("(" + i + "," + j + ")");
-                    break;
-                }
-            }
-        }
+        
+        /*I=1 J=60
+          I=4 J=55
+          I=7 J=50
+          …
+          I=? J=0 */
+          
+          for (int i = 1, j = 60; j >= 0; i+=3, j-=5){
+                System.out.println("I = " + i + "  J = " + j);
+          }
 }
 }
