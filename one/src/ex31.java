@@ -15,26 +15,30 @@ public class ex31 {
 
         //Criando um objeto scanner para obter as entradas do usuario.
         Scanner scanner = new Scanner(System.in);
-        //Obtendo as entradas do usuario
+        //Obtendo as entradas do usuario e verificando as condicoes
         int cont = 0;
         float acu = 0;
-        while (cont <= 1) {
-            System.out.println("Digite uma nota: ");
+        while (true) {
+            System.out.print("Digite uma nota 1: ");
             float nota1 = scanner.nextFloat();
             if (nota1 < 0 || nota1 > 10) {
                 System.out.println("Nota invalida.");
             }else {
                 acu += nota1;
                 cont++;
+                break;
             }
-            System.out.println("Digite uma nota: ");
-            float nota2 = scanner.nextFloat();
-            if (nota2 < 0 || nota2 > 10) {
+        }
+        while (true) {
+            System.out.print("Digite uma nota 2: ");
+            float nota1 = scanner.nextFloat();
+            if (nota1 < 0 || nota1 > 10) {
                 System.out.println("Nota invalida.");
             }else {
-                acu += nota2;
+                acu += nota1;
                 cont++;
-            }
+                break;
+            } 
         }
         float media = acu / cont;
         System.out.println("Media: " + media);
