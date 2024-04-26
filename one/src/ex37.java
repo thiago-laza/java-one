@@ -9,7 +9,7 @@ public class ex37 {
         //Recebendo as entradas dos usurarios
 
         //usuario1
-        System.out.prints("Nome: ");
+        System.out.println("Nome: ");
         String nome1 = scanner.nextLine();
         System.out.print("Par ou Impar? ");
         String parOuImpar1 = scanner.nextLine();
